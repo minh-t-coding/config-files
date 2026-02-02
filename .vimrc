@@ -18,3 +18,7 @@ set ruler                      " Shows the current line number at the bottom-rig
                                " of the screen.
 set wildmenu                   " Great command-line completion, use `<Tab>` to move
                                " around and `<CR>` to validate.
+			       "
+set tabstop=4                  " Tabs are 4 spaces
+set expandtab		       " Use Spaces for indentation
+set shiftwidth=4	       " Use 4 spaces for auto-indent step
