@@ -27,3 +27,14 @@ set showbreak=↪\               " Visual indicator for wrapped lines
 set textwidth=0                " Disable hard wrapping completely
 set formatoptions-=t           " Never auto-wrap text
 set formatoptions+=l           " Allow long lines in insert mode
+
+" tegappan/lsp
+packadd lsp
+
+" Clangd language server
+call LspAddServer([#{
+	\    name: 'clangd',
+ 	\    filetype: ['c', 'cpp'],
+	\    path: '/usr/bin/clangd-18',
+ 	\    args: ['--background-index']
+ 	\  }])
